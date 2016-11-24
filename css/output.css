@@ -1,5 +1,6 @@
 body {
   font-family: Helvetica, sans-serif;
+  font-size: 14px;
   margin: 0;
   padding: 0;
   background-color: #FFFFF0; }
@@ -7,11 +8,10 @@ body {
 nav {
   display: flex;
   justify-content: space-between;
-  font-size: 0.8em;
+  font-size: 1em;
   background-image: url("https://placekitten.com/1600/500");
-  height: 500px; }
-  nav .logo img {
-    margin: 2px; }
+  height: 500px;
+  padding: 3vh 1.5vw 0 0.7vw; }
   nav .right-menu ul {
     list-style-type: none;
     display: flex;
@@ -24,11 +24,38 @@ nav {
       margin: none;
       font-weight: bold; }
 
+.research-bar {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  margin: 3vh 26vw; }
+
 form {
   display: flex;
-  flex-direction: row; }
-  form form .field {
+  flex-direction: row;
+  width: auto; }
+  form .field {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    width: auto;
+    border: 1px #E0E3DA solid;
+    padding: 10px; }
+    form .field label {
+      padding-bottom: 3vh; }
+    form .field select {
+      height: 6vh;
+      margin: auto; }
+  form .when {
+    display: flex;
+    flex-direction: row; }
+  form button {
+    border-radius: 4px;
+    color: white;
+    background-color: #ff5a5f;
+    border-color: #ff5a5f;
+    margin-left: 1vw;
+    height: 10vh;
+    width: 8vw;
+    font-size: 1.4em; }
 
 /*# sourceMappingURL=output.css.map */
