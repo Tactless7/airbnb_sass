@@ -3,7 +3,7 @@ body {
   font-size: 14px;
   margin: 0;
   padding: 0;
-  background-color: #FFFFF0; }
+  background-color: #FFFFFF; }
 
 nav {
   display: flex;
@@ -20,6 +20,7 @@ nav {
     margin: 0;
     padding: 0; }
     nav .right-menu ul li {
+      color: #FFFFFF;
       padding: 10px 20px;
       margin: none;
       font-weight: bold; }
@@ -41,13 +42,21 @@ form {
     border: 1px #E0E3DA solid;
     padding: 10px; }
     form .field label {
-      padding-bottom: 3vh; }
+      padding-bottom: 1vh;
+      color: #484848;
+      font-size: 1.2em; }
     form .field select {
-      height: 6vh;
+      height: 5vh;
       margin: auto; }
+    form .field input, form .field select {
+      background-color: #FFFFFF;
+      border: 0px;
+      font-size: 1.1em;
+      color: #484848; }
   form .when {
     display: flex;
-    flex-direction: row; }
+    flex-direction: row;
+    margin: auto; }
   form button {
     border-radius: 4px;
     color: white;
@@ -57,5 +66,20 @@ form {
     height: 10vh;
     width: 8vw;
     font-size: 1.4em; }
+
+.experiences {
+  display: flex;
+  flex-direction: column; }
+  .experiences h2 {
+    color: #484848;
+    font-size: 2em; }
+  .experiences .experiencesGroup {
+    display: flex;
+    flex-direction: row; }
+    .experiences .experiencesGroup .experience {
+      width: 250px;
+      margin: 1vh 0.5vw; }
+  .experiences .description {
+    color: #484848; }
 
 /*# sourceMappingURL=output.css.map */
